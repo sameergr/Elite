@@ -1,0 +1,181 @@
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/* Basic Styles */
+nav {
+    border-bottom: 1px solid #D0D0D0;
+    font-size: 15px;
+    font-variant: small-caps;
+    position: relative;
+    width: 100%;
+}
+nav li {
+    border-bottom: 3px solid #FBFCF1;
+    display: inline-block;
+    padding: 5px 25px 17px;
+}
+nav li:hover {
+    border-bottom: 3px solid #335a89;
+}
+nav a {
+    color: #000000;
+    display: inline-block;
+    margin-left: 15px;
+    text-decoration: none;
+}
+nav li:last-child a {
+	border-right: 0;
+}
+nav a:hover, nav a:active {
+	color: #335a89;
+}
+nav a#pull {
+	display: none;
+}
+.info {
+    background-image: url("../images/home-black.png");
+    background-position: 20% 22%;
+    background-repeat: no-repeat;
+}
+.info:hover{
+    background-image: url("../images/home-blue.png");
+}
+.hwuse{
+	background-image: url("../images/use-black.png");
+	background-position: 15% 22%;
+}
+.hwuse:hover{
+	background-image: url("../images/use-blue.png");
+}
+.category{
+	background-image: url("../images/category-black.png");
+	background-position: 15% 30%;
+}
+.category:hover{
+	background-image: url("../images/category-blue.png");
+}
+.subscription{
+	background-image: url("../images/subscription-black.png");
+	background-position: 14% 30%;
+}
+.subscription:hover{
+	background-image: url("../images/subscription-blue.png");
+}
+.contact{
+	background-image: url("../images/contact-black.png");
+	background-position: 14% 30%;
+}
+.contact:hover{
+	background-image: url("../images/contact-blue.png");
+}
+
+/*Styles for screen 600px and lower*/
+@media screen and (max-width: 638px) {
+	.login-blk input[type="text"]{
+        margin-bottom: 8px;
+    }
+}
+@media screen and (max-width: 600px) {
+	nav { 
+  		height: auto;
+  	}
+  	nav ul {
+  		width: 100%;
+  		display: block;
+  		height: auto;
+  	}
+  	nav li {
+  		float: left;
+  		position: relative;
+  	}
+  	nav a {
+	  	text-align: left;
+	  	width: 100%;
+  	}
+
+    .login-blk input[type="text"]{
+        margin-bottom: 8px;
+    }
+}
+@media only screen and (max-width : 640px)and (min-width: 582px) {
+	.logo a {
+	    line-height: 54px;
+	}
+}
+@media only screen and (max-width : 582px)and (min-width: 480px) {
+	.logo a {
+	    line-height: 27px;
+	}
+}
+/*Styles for screen 515px and lower*/
+@media only screen and (max-width : 480px) {
+	nav {
+		border-bottom: 0;
+	}
+	nav ul {
+		display: none;
+		height: auto;
+	}
+	nav a#pull {
+	    background-color: #407620;
+	    color: #FFFFFF;
+	    display: block;
+	    margin-left: 0;
+	    padding: 10px 0 10px 10px;
+	    position: relative;
+	    width: 97%;
+	}
+	nav a#pull:after {
+		content:"";
+		background: url('../images/nav-icon.png') no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
+	nav li {
+	    margin-bottom: 10px;
+	    padding: 0 25px 6px;
+	}
+	nav li {
+	    float: left;
+	    position: relative;
+	    width: 84%;
+	}
+	.contact {
+    	background-position: 1% 30%;
+	}
+	.subscription {
+    	background-position: 1% 30%;
+	}
+	.category {
+	    background-position: 1% 30%;
+	}
+	.hwuse {
+	    background-position: 1% 22%;
+	}
+	.info {
+	    background-position: 1% 22%;
+	}
+}
+
+/*Smartphone*/
+@media only screen and (max-width : 320px) {
+	nav li {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+}

@@ -1,0 +1,21 @@
+@CHARSET "ISO-8859-1";
+
+body {
+    margin: 0 auto;
+    width: 900px;
+}
+
+.processing_box {
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    margin-top: 140px;
+}
+
+p {
+    color: #808080;
+    font-size: 17px;
+}
+	

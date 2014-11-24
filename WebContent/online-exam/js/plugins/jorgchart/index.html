@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>jOrgChart - A jQuery OrgChart Plugin</title>
+    <link rel="stylesheet" href="../../../css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/jquery.jOrgChart.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+    <link href="css/prettify.css" type="text/css" rel="stylesheet" />
+    
+
+    <script type="text/javascript" src="prettify.js"></script>
+    
+    <!-- jQuery includes -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+    
+    <script type="text/javascript" src="jquery.jOrgChart.js"></script>
+
+    <script>
+    jQuery(document).ready(function() {
+        $("#org").jOrgChart({
+            chartElement : '#chart',
+            dragAndDrop  : true
+        });
+    });
+    </script>
+  </head>
+
+  <body onload="prettyPrint();">
+    
+    
+    <ul id="org" style="display:none">
+        <li>Clyde Companies<br /><input type="checkbox" name="checkRow" />
+            <br/>
+                    <div style="margin-top: 5px;">
+                        <a href="#" class="tablectrl_small bDefault tipS" title="View"><span class="iconb" data-icon="&#xe1ba;"></span></a>
+                        <a href="#" class="tablectrl_small bDefault tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                    </div>
+            <ul>
+                <li id="geneva">
+                    <!-- <div class="checker" id="uniform-check2" style="margin: 7px 40px;"><span><input type="checkbox" id="check2" name="chbox1" style="opacity: 0; "></span></div><br/> -->
+                    <span class="iconb" data-icon="&#xe151;"></span> Geneva Rock
+                    <br />
+                    <input type="checkbox" name="checkRow" />
+                    <br/>
+                    <div style="margin-top: 5px;">
+                        <a href="#" class="tablectrl_small bDefault tipS" title="View"><span class="iconb" data-icon="&#xe1ba;"></span></a>
+                        <a href="#" class="tablectrl_small bDefault tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                        <a href="#" class="tablectrl_small bDefault tipS" title="Delete"><span class="iconb" data-icon="&#xe136;"></span></a>
+                    </div>
+             </li>
+             <li><span class="iconb" data-icon="&#xe151;"></span> W.W.Clyde<br /><input type="checkbox" name="checkRow" />
+                <br/>
+                    <div style="margin-top: 5px;">
+                        <a href="#" class="tablectrl_small bDefault tipS" title="View"><span class="iconb" data-icon="&#xe1ba;"></span></a>
+                        <a href="#" class="tablectrl_small bDefault tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                        <a href="#" class="tablectrl_small bDefault tipS" title="Delete"><span class="iconb" data-icon="&#xe136;"></span></a>
+                    </div>
+               <!-- <a href="http://wesnolte.com" target="_blank">Click me</a> -->
+               <ul>
+                 <li><span class="iconb" data-icon="&#xe151;"></span> Administration<br /><input type="checkbox" name="checkRow" />
+                 <br/>
+                    <div style="margin-top: 5px;">
+                        <a href="#" class="tablectrl_small bDefault tipS" title="View"><span class="iconb" data-icon="&#xe1ba;"></span></a>
+                        <a href="#" class="tablectrl_small bDefault tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                        <a href="#" class="tablectrl_small bDefault tipS" title="Delete"><span class="iconb" data-icon="&#xe136;"></span></a>
+                    </div>
+                </li>
+                 <li>
+                    <span class="iconb" data-icon="&#xe151;"></span> Construction<br /><input type="checkbox" name="checkRow" />
+                    <br/>
+                    <div style="margin-top: 5px;">
+                        <a href="#" class="tablectrl_small bDefault tipS" title="View"><span class="iconb" data-icon="&#xe1ba;"></span></a>
+                        <a href="#" class="tablectrl_small bDefault tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                        <a href="#" class="tablectrl_small bDefault tipS" title="Delete"><span class="iconb" data-icon="&#xe136;"></span></a>
+                    </div>
+                    <!-- <p>A link and paragraph test</p> -->
+                 </li>
+               </ul>
+             </li>
+             <li class="fruit"><span class="iconb" data-icon="&#xe151;"></span> Sunroc<br /><input type="checkbox" name="checkRow" />
+                <br/>
+                    <div style="margin-top: 5px;">
+                        <a href="#" class="tablectrl_small bDefault tipS" title="View"><span class="iconb" data-icon="&#xe1ba;"></span></a>
+                        <a href="#" class="tablectrl_small bDefault tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                        <a href="#" class="tablectrl_small bDefault tipS" title="Delete"><span class="iconb" data-icon="&#xe136;"></span></a>
+                    </div>
+               <ul>
+                 <li><span class="iconb" data-icon="&#xe151;"></span> Accounting<br /><input type="checkbox" name="checkRow" />
+                    <br/>
+                    <div style="margin-top: 5px;">
+                        <a href="#" class="tablectrl_small bDefault tipS" title="View"><span class="iconb" data-icon="&#xe1ba;"></span></a>
+                        <a href="#" class="tablectrl_small bDefault tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                        <a href="#" class="tablectrl_small bDefault tipS" title="Delete"><span class="iconb" data-icon="&#xe136;"></span></a>
+                    </div>
+                   <ul>
+                     <li><span class="iconb" data-icon="&#xe151;"></span> Interns<br /><input type="checkbox" name="checkRow" />
+                        <br/>
+                        <div style="margin-top: 5px;">
+                            <a href="#" class="tablectrl_small bDefault tipS" title="View"><span class="iconb" data-icon="&#xe1ba;"></span></a>
+                            <a href="#" class="tablectrl_small bDefault tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                            <a href="#" class="tablectrl_small bDefault tipS" title="Delete"><span class="iconb" data-icon="&#xe136;"></span></a>
+                        </div>
+                     </li>
+                   </ul>
+                 </li>
+                 <li><span class="iconb" data-icon="&#xe151;"></span> Marketing<br /><input type="checkbox" name="checkRow" />
+                        <br/>
+                        <div style="margin-top: 5px;">
+                            <a href="#" class="tablectrl_small bDefault tipS" title="View"><span class="iconb" data-icon="&#xe1ba;"></span></a>
+                            <a href="#" class="tablectrl_small bDefault tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                            <a href="#" class="tablectrl_small bDefault tipS" title="Delete"><span class="iconb" data-icon="&#xe136;"></span></a>
+                        </div>
+                   <ul>
+                     <li><span class="iconb" data-icon="&#xe151;"></span> Web<br /><input type="checkbox" name="checkRow" />
+                        <br/>
+                        <div style="margin-top: 5px;">
+                            <a href="#" class="tablectrl_small bDefault tipS" title="View"><span class="iconb" data-icon="&#xe1ba;"></span></a>
+                            <a href="#" class="tablectrl_small bDefault tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                            <a href="#" class="tablectrl_small bDefault tipS" title="Delete"><span class="iconb" data-icon="&#xe136;"></span></a>
+                        </div>
+                     </li>
+                     <li><span class="iconb" data-icon="&#xe151;"></span> Print<br /><input type="checkbox" name="checkRow" />
+                        <br/>
+                        <div style="margin-top: 5px;">
+                            <a href="#" class="tablectrl_small bDefault tipS" title="View"><span class="iconb" data-icon="&#xe1ba;"></span></a>
+                            <a href="#" class="tablectrl_small bDefault tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                            <a href="#" class="tablectrl_small bDefault tipS" title="Delete"><span class="iconb" data-icon="&#xe136;"></span></a>
+                        </div>
+                     </li>
+                     <!-- <li>Video</li> -->
+                   </ul>
+                 </li>
+               </ul>
+             </li>
+             <li class="collapsed"><span class="iconb" data-icon="&#xe151;"></span> Beehive Ins<br /><input type="checkbox" name="checkRow" />
+                    <br/>
+                    <div style="margin-top: 5px;">
+                        <a href="#" class="tablectrl_small bDefault tipS" title="View"><span class="iconb" data-icon="&#xe1ba;"></span></a>
+                        <a href="#" class="tablectrl_small bDefault tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                        <a href="#" class="tablectrl_small bDefault tipS" title="Delete"><span class="iconb" data-icon="&#xe136;"></span></a>
+                    </div>
+               <ul>
+                 <li><span class="iconb" data-icon="&#xe151;"></span> Business<br /><input type="checkbox" name="checkRow" />
+                    <br/>
+                    <div style="margin-top: 5px;">
+                        <a href="#" class="tablectrl_small bDefault tipS" title="View"><span class="iconb" data-icon="&#xe1ba;"></span></a>
+                        <a href="#" class="tablectrl_small bDefault tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                        <a href="#" class="tablectrl_small bDefault tipS" title="Delete"><span class="iconb" data-icon="&#xe136;"></span></a>
+                    </div>
+                 </li>
+                 <li><span class="iconb" data-icon="&#xe151;"></span> Consumer<br /><input type="checkbox" name="checkRow" />
+                    <br/>
+                    <div style="margin-top: 5px;">
+                        <a href="#" class="tablectrl_small bDefault tipS" title="View"><span class="iconb" data-icon="&#xe1ba;"></span></a>
+                        <a href="#" class="tablectrl_small bDefault tipS" title="Edit"><span class="iconb" data-icon="&#xe1db;"></span></a>
+                        <a href="#" class="tablectrl_small bDefault tipS" title="Delete"><span class="iconb" data-icon="&#xe136;"></span></a>
+                    </div>
+                </li>
+               </ul>
+             </li>
+           </ul>
+         </li>
+    </ul>             
+    
+    <div id="chart" class="orgChart"></div>
+    
+    <script>
+        jQuery(document).ready(function() {
+            
+            /* Custom jQuery for the example */
+            $("#show-list").click(function(e){
+                e.preventDefault();
+                
+                $('#list-html').toggle('fast', function(){
+                    if($(this).is(':visible')){
+                        $('#show-list').text('Hide underlying list.');
+                        $(".topbar").fadeTo('fast',0.9);
+                    }else{
+                        $('#show-list').text('Show underlying list.');
+                        $(".topbar").fadeTo('fast',1);                  
+                    }
+                });
+            });
+            
+            $('#list-html').text($('#org').html());
+            
+            $("#org").bind("DOMSubtreeModified", function() {
+                $('#list-html').text('');
+                
+                $('#list-html').text($('#org').html());
+                
+                prettyPrint();                
+            });
+        });
+    </script>
+
+</body>
+</html>

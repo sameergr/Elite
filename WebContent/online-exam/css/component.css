@@ -1,0 +1,101 @@
+
+.cbp-spmenu {
+    background: none repeat scroll 0 0 #EEEFE2;
+    border-right: 1px solid #D8D9C7;
+    position: fixed;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 290px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	left: -290px;
+}
+.cbp-spmenu-left.cbp-spmenu-open {
+	left: 0px;
+}
+
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.search_icon {
+    background: url("../images/icons.png") no-repeat scroll 0 -3664px rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 16px;
+    vertical-align: middle;
+    width: 16px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.srch-wrp input {
+    background-color: transparent;
+    border: medium none;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-top: 0;
+    width: 85%;
+}
+.srch-wrp input:focus{
+	border: none;
+	color: #FFFFFF;
+}
+.srch-wrp input:hover{
+	color: #FFFFFF;
+}
+.srch-wrp:hover .search_icon{
+	background-position: 0 -3248px;
+}
+.srch-wrp {
+    background-color: #5A5C00;
+    padding: 3.4% 3%;
+}
+.inner-img {
+    background-color: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    border-radius: 5px;
+    padding: 5px;
+    vertical-align: middle;
+    width: 32px;
+    margin-right: 5px;
+}
+
+#showLeft {
+    left: 6%;
+    position: absolute;
+    top: 2%;
+}
+.compy-blk {
+    color: #5A5C00;
+    font-size: 17px;
+    font-variant: small-caps;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.compy-blk div {
+    display: inline-block;
+}
+.submenu-links ul {
+    list-style: none outside none;
+}
+.submenu-links ul li {
+    background-color: rgba(255, 255, 255, 0.66);
+    margin-bottom: 3px;
+    padding: 10px 15px;
+}
+.chat-wrp.spn_4_5 {
+    width: 78.68%;
+}

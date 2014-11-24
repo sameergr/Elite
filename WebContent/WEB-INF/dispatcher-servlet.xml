@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd
+http://www.springframework.org/schema/mvc 
+http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+http://www.springframework.org/schema/task
+ http://www.springframework.org/schema/task/spring-task-3.0.xsd">
+ 
+    <mvc:interceptors>
+  		<bean class="com.innverse.elearn.filter.ELiteInterceptor" />
+	</mvc:interceptors> 
+    
+	<!-- the ResourceBundleViewResolver -->
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.ResourceBundleViewResolver">
+	  <property name="basename" value="views"/>
+	  <property name="order" value="0"></property>
+	</bean>
+	
+    <bean id="viewResolver1"
+    class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+	    <property name="viewClass">
+	        <value>
+	            org.springframework.web.servlet.view.tiles2.TilesView
+	        </value>
+	    </property>
+	</bean>
+    
+    
+ 	<mvc:resources mapping="/online-exam/css/**" location="/online-exam/css/" />
+    <mvc:resources mapping="/online-exam/images/**" location="/online-exam/images/" />
+    <mvc:resources mapping="/resources/images/**" location="/resources/images/" />
+    <mvc:resources mapping="/resources/scorm/**" location="/resources/scorm/" />
+    <mvc:resources mapping="/online-exam/js/**" location="/online-exam/js/" /> 
+    <mvc:resources mapping="/resources/media/**" location="/resources/media/" />
+    
+
+
+</beans>

@@ -1,0 +1,363 @@
+
+/*----------------------------------- Defaults -----------------------------------*/
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.align-left{
+	text-align: left;
+}
+.align-right{
+	text-align: right;
+}
+.align-center{
+    text-align: center;
+}
+img.right{
+	margin-left: 10px;
+}
+img.left{
+	margin-right: 10px;
+}
+img.top{
+	margin-bottom: 10px;
+}
+img.bottom{
+	margin-top: 10px;
+}
+.hidden{
+    display: none;
+}
+/*------- transitions -------*/
+.transition, input, textarea, select, .ab-slider-navigation a{
+    transition: 0.2s all;
+    -o-transition: 0.2s all;
+    -moz-transition: 0.2s all;
+    -webkit-transition: 0.2s all;
+}
+
+/*----------------------------------- Common -----------------------------------*/
+.ab_overlay{
+    background-color: #000000;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+	overflow-x: auto;
+    overflow-y: scroll;
+}
+.ab_loading{
+	background:url(../images/loading.gif) no-repeat 0 0 transparent;
+	width: 220px;
+	height: 19px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -10px 0 0 -110px;
+	display: none;
+	z-index: 1005;
+	display: none;
+}
+.ab_overlay_shown{
+	margin-right: 17px;
+	overflow: hidden;
+}
+
+/*----------------------------------- Form styles -----------------------------------*/
+.form-item {
+    margin: 0px 0px 15px;
+}
+.form-item:after, .form-item:before {
+    content: "";
+    display: table;
+}
+.form-item:after {
+    clear: both;
+}
+.form-label {
+    float: left;
+    width: 25%;
+    margin: 3px 5% 7px 0;
+}
+.form-value {
+    float: left;
+    position: relative;
+    width: 70%;
+}
+.no-label .form-value{
+    width: 100%;
+}
+input[type="text"], select, input[type="password"], input[type="email"], input[type="number"],input[type="file"], textarea {
+    border: 1px solid #DBDDCC;
+    padding: 1.5%;
+    width: 95%;
+    margin-top: 10px;
+    color: #95966C;
+}
+/* mozilla padding hack */
+@-moz-document url-prefix() {
+    input[type="text"], input[type="password"], input[type="email"], input[type="number"],input[type="file"], textarea {
+        padding: 2.5% 0;
+        text-indent: 1.5%;
+        width: 99%;
+    }
+    textarea{
+        width:99%
+    }
+}
+input[type="text"]:first-child, select:first-child, input[type="password"]:first-child,
+input[type="email"]:first-child, input[type="number"]:first-child, input[type="file"]:first-child, textarea:first-child{
+    margin-top: 0;
+}
+input[type="text"]:hover, select:hover, input[type="password"]:hover,
+input[type="email"]:hover, input[type="number"]:hover,input[type="file"]:hover, textarea:hover{
+    color: #666;
+}
+input[type="text"]:focus, select:focus, input[type="password"]:focus,
+input[type="email"]:focus, input[type="number"]:focus,input[type="file"]:focus, textarea:focus{
+    border: 1px solid #CACBAD;
+    color: #5A5C00;
+}
+.form-value input[type="radio"], .form-value input[type="checkbox"] {
+    bottom: -1px;
+    height: 18px;
+    position: relative;
+    vertical-align: bottom;
+    width: 18px;
+}
+.form-value label {
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 19px;
+    text-indent: -19px;
+}
+.form-value label:last-child{
+	margin: 0;
+}
+.form-value select {
+    width: 99.5%;
+}
+.form-actions input {
+    margin-right: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.form-actions.align-right input:last-child, .form-actions.right input:last-child {
+    margin-right: 0;
+}
+
+/*----------------------------------- AB Gallery -----------------------------------*/
+.ab_gallery_view, .ab_popup{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	height: 0;
+	width: 0;
+	margin: 0;
+	z-index: 1000;
+	box-shadow: 0 0 15px 2px #222222;
+	display: none;	
+	background-color: #fff;
+}
+.ab_gallery_view{
+	background: url(../images/loading.gif) no-repeat center center #fff;
+}
+.ab_gallery_view img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.ab_gallery_close, .ab_popup_close{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 36px;
+	height: 36px;
+	background:url(../images/close.png) no-repeat 0 0 transparent;
+	cursor: pointer;
+	z-index: 15;
+}
+.ab_gallery_title, .ab_gallery_count {
+    bottom: -25px;
+    color: #FFFFFF;
+    font-family: arial;
+    font-size: 12px;
+    height: 14px;
+    left: 7px;
+    position: absolute;
+    width: 70%;
+}
+.ab_gallery_count{
+	right: 7px;
+	left: auto;
+	text-align: right;
+	width: 30%;
+}
+.ab_gallery_prev, .ab_gallery_next{
+	background: url("../images/prev.png") no-repeat scroll 0 center transparent;
+    cursor: pointer;
+    height: 100%;
+    left: 15px;
+    position: absolute;
+    top: 0;
+    width: 45%;
+	opacity: 0;
+	z-index: 10;
+}
+.ab_gallery_next{
+	left: auto;
+	right: 15px;
+	background: url("../images/next.png") no-repeat scroll right center transparent;
+}
+.ab_gallery_prev:hover, .ab_gallery_next:hover{
+	opacity: 1;
+}
+
+/*----------------------------------- AB Popup -----------------------------------*/
+.ab_popup{
+	opacity: 0;
+}
+.ab_popup_wrp{
+	max-height: 100%;
+    overflow: auto;
+}
+.ab_popup_close{
+	top: -18px;
+	right: -18px;
+}
+.ab_popup.ab_popup_clone{
+    left: -8000px !important;
+    height: auto;
+    width: auto;
+}
+
+/*----------------------------------- AB Message -----------------------------------*/
+.ab_message {    
+	background-color: #6B92CF;
+    border-bottom: 1px solid #FFFFFF;    
+    color: #FFFFFF;
+    left: 0;
+    padding: 10px 0;
+    position: fixed;
+    text-align: center;
+    top: -200px;
+    width: 100%;
+	display: none;
+	box-shadow: 0 0 4px #333333;
+	-moz-box-shadow: 0 0 4px #333333;
+	-o-box-shadow: 0 0 4px #333333;
+	-webkit-box-shadow: 0 0 4px #333333;
+}
+.ab_message.error{
+	background-color: #F71541;
+}
+.ab_message.success{
+	background-color: #AAC664;
+}
+
+/*----------------------------------- AB Validate -----------------------------------*/
+/* .errorbox {
+    color: #EB2525;
+    font-size: 12px;
+    left: 270px;
+    position: absolute;
+    top: 7px;
+    width: 300px;
+} */
+.errorbox {
+    background-color: #F15858;
+    border: 1px solid #F15858;
+    color: #FFFFFF;
+    display: none;
+    font-size: 10px;
+    padding: 2px 2%;
+    width: 95%;
+}
+input.error, select.error, textarea.error {
+    /* border: 1px solid #F15858; */
+    background-color: #FCF9CF;
+}
+
+/*----------------------------------- AB Slider -----------------------------------*/
+.ab-slider-viewport {
+    overflow: hidden;
+    position: relative;
+}
+.ab-slider{
+    
+}
+.ab-slider-slide{
+    float: left;
+}
+.ab-slider-navigation{
+    display: none;
+}
+.ab-slider-navigation a{
+    -webkit-box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.6);
+
+    background: url("../images/prev2.png") no-repeat scroll 0 0 transparent;
+    border-radius: 50% 50% 50% 50%;    
+    cursor: pointer;
+    height: 46px;
+    left: 15px;
+    margin: -23px 0 0;
+    position: absolute;
+    top: 50%;
+    width: 46px;
+    opacity: 0.8;
+}
+.ab-slider-navigation a.next{
+    background-image: url("../images/next2.png");
+    right: 15px;
+    left: auto;
+}
+.ab-slider-navigation a:hover{
+    opacity: 1;
+}
+.ab-slider-controls{
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50px 50px 50px 50px;
+    bottom: 15px;
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+    display: none;
+}
+.ab-slider-controls a {
+    background-color: #FFFFFF;
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 0 0 2px 1px #666666 inset;
+    cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    margin: 0 5px;
+    width: 16px;
+}
+.ab-slider-controls a.active{
+    background-color: #AFAFF4;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
